@@ -1,0 +1,12 @@
+.env
+.env.local
+.env.*.local
+*.log
+dump.rdb
+*.db
+*.db*
+node_modules/
+.turbo/
+.next/
+dist/
+build/

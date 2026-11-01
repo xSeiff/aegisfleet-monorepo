@@ -1,0 +1,32 @@
+{
+  "name": "@hugebot/bot",
+  "version": "1.0.0",
+  "private": true,
+  "main": "./dist/bot.js",
+  "scripts": {
+    "build": "tsc",
+    "start:cluster": "node dist/cluster.js",
+    "deploy:commands": "node dist/registry/deployCommands.js",
+    "dev": "tsc -w",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@hugebot/database": "workspace:*",
+    "@hugebot/shared": "workspace:*",
+    "@napi-rs/canvas": "^0.1.52",
+    "bullmq": "^5.8.0",
+    "discord-hybrid-sharding": "^2.2.3",
+    "discord.js": "^14.15.3",
+    "dotenv": "^16.4.5",
+    "ioredis": "^5.4.1",
+    "lavashark": "^2.1.0",
+    "pino": "^9.1.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.14.0",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.4",
+    "typescript": "^5.5.0"
+  }
+}

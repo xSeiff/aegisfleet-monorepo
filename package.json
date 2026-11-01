@@ -1,0 +1,28 @@
+{
+  "name": "huge-bot-ecosystem",
+  "version": "1.0.0",
+  "private": true,
+  "packageManager": "pnpm@9.1.0",
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev --parallel",
+    "lint": "turbo run lint",
+    "test": "turbo run test",
+    "db:generate": "turbo run db:generate",
+    "db:push": "turbo run db:push",
+    "db:migrate": "turbo run db:migrate",
+    "deploy:commands": "pnpm --filter @hugebot/bot run deploy:commands",
+    "start:cluster": "pnpm --filter @hugebot/bot start:cluster",
+    "start:api": "pnpm --filter @hugebot/api start",
+    "start:dashboard": "pnpm --filter @hugebot/dashboard start"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "prettier": "^3.3.0",
+    "turbo": "^2.0.0",
+    "typescript": "^5.5.0"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
